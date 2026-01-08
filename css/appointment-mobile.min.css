@@ -1,0 +1,93 @@
+.appointment__mobile-form{
+    background-image: url(../images/logo_mobile/mobile_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 370px;
+    width: var(--width-100);
+    padding: 15px 40px;
+    box-sizing: var(--box-sizing-border-box);
+}
+
+.appointment__mobile-form-body{
+    background-color: var(--background-color-white);
+    width: var(--width-100);
+    min-height: 300px;
+    border-radius: 15px;
+    border: 2px solid var(--color-01969A);
+    padding: 10px 10px;
+    box-sizing: var(--box-sizing-border-box);
+}
+
+.appointment__mobile-form-title{
+    color: var(--color-01969A);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-700);
+    text-align: var(--text-center);
+    line-height: 25px;
+    text-transform: var(--text-tranform-uppercase);
+}
+
+.appointment__mobile-form-input{
+    width: var(--width-100);
+    margin-top: 10px;
+}
+
+.appointment__mobile-form-input>input {
+    outline: none;
+    width: var(--width-100);
+    height: 35px;
+    border-radius: 8px;
+    font-size: var(--font-size-12);
+    padding: 5px 10px;
+    font-weight: 600;
+    color: var(--color-999);
+    border: 2px solid rgba(1, 150, 154, 1);
+    font-style: italic;
+    box-sizing: var(--box-sizing-border-box);
+}
+
+.appointment__mobile-form-row{
+    display: var(--display-flex);
+    align-items: var(--align-item-center);
+    gap: 10px;
+    width: var(--width-100);
+    box-sizing: var(--box-sizing-border-box);
+    margin-top: 10px;
+}
+
+.appointment__mobile-form-col{
+    width: 50%;
+}
+
+.appointment__mobile-form-col>input{
+    box-sizing: var(--box-sizing-border-box);
+    outline: none;
+    width: var(--width-100);
+    height: 35px;
+    border-radius: 8px;
+    font-size: var(--font-size-12);
+    padding: 5px 10px;
+    font-weight: 600;
+    color: var(--color-999);
+    border: 2px solid rgba(1, 150, 154, 1);
+    font-style: italic;
+}
+
+.appointment__mobile-form-button{
+    text-align: var(--text-center);
+    width: var(--width-100);
+    margin-top: 10px;
+}
+
+.appointment__mobile-form-button>button{
+    width: 60%;
+    border-radius: 8px;
+    background: linear-gradient(to right, var(--color-01969A), var(--color-50e2e7));
+    color: var(--color-white);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-700);
+    text-align: var(--text-center);
+    padding: 5px 10px;
+    cursor: var(--cursor-pointer);
+    border: none;
+}

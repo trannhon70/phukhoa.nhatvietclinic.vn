@@ -1,0 +1,95 @@
+.footer__mobile{
+    padding-bottom: 80px;
+}
+
+.footer__mobile-body{
+    position: fixed;
+    bottom: 0;
+    width: var(--width-100);
+    z-index: 1000;
+}
+
+.footer__mobile-container{
+    display: var(--display-flex);
+    align-items: var(--align-item-center);
+    box-sizing: border-box;
+    gap: 4px;
+    width: var(--width-100);    
+}
+
+.footer__mobile-container-left{
+    width: 70%;
+    position: var(--position-relative);
+}
+
+.footer__mobile-container-left,
+.footer__mobile-container-right{
+    background-image: url(../images/logo_mobile/bg-mobile-top.png);
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--background-color-008083);
+    text-decoration: none;
+    text-align: var(--text-center);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.footer__mobile-container-left-top{
+    color: var(--color-white);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-700);
+    text-transform: var(--text-tranform-uppercase);
+    margin-bottom: 5px;
+        
+}
+
+.footer__mobile-container-left-bottom{
+    background-color: var(--background-color-white);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-700);
+    border-radius: 8px;
+    padding: 3px 40px;
+    margin-top: 6px;
+    color: var(--color-black);
+}
+.footer__mobile-container-right{
+    width: 30%;
+}
+
+.footer__mobile-container-right > div{
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-700);
+    text-align: var(--text-center);
+    color: var(--color-white);
+}
+
+.footer__mobile-container-right > img{
+    transform: translate(0px , -22px);
+}
+
+.footer__mobile-container-left-icon{
+    position: var(--position-absolute);
+    top: 0;
+    right: -33px;
+}
+
+.footer__mobile-container-left-icon-top{
+    position: var(--position-absolute);
+    top: -50px;
+    right: -42px;
+    background-image: url(../images/logo_mobile/icon_chat.png);
+    width: 80px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.footer__mobile-container-left-icon-top>span{
+    margin-top: 18px;
+    display: var(--display-block);
+    font-size: var(--font-size-12);
+    color: var(--color-white);
+    font-weight: var(--font-weight-700);
+}
