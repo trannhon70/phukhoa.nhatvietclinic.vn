@@ -8,147 +8,126 @@ if (Session::get('role') === '1') {
 
 
 ?>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Tài khoản</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Cập nhật mật khẩu</li>
-        </ol>
-    </nav>
-    <div id="form-create-user" style="padding: 0px 25%;" class="row g-3 needs-validation">
-        <div style="display: flex; align-items:center; justify-content: center; text-transform: capitalize; font-size: 25px; font-weight: 600; color: seagreen; "><?php echo $hoTen; ?></div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Tài khoản</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Cập nhật mật khẩu</li>
+    </ol>
+</nav>
+<div id="form-create-user" style="padding: 0px 25%;" class="row g-3 needs-validation">
+    <div
+        style="display: flex; align-items:center; justify-content: center; text-transform: capitalize; font-size: 25px; font-weight: 600; color: seagreen; ">
+        <?php echo $hoTen; ?></div>
 
-        <label for="validationCustom02" class="form-label">Nhập mật khẩu mới</label>
-        <div style="margin-top: 0px;" class="input-group ">
-            <span class="input-group-text"><i class="fas fa-lock"></i></span>
-            <input class="form-control" type="password" id="password" name="password" placeholder="Password" value="">
-            <span class="input-group-text"><i class="far fa-eye-slash" id="togglePassword"></i></span>
-        </div>
-
-        <label for="validationCustom02" class="form-label">Nhập lại mật khẩu mới</label>
-        <div style="margin-top: 0px;" class="input-group ">
-            <span class="input-group-text"><i class="fas fa-lock"></i></span>
-            <input class="form-control" type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" value="">
-            <span class="input-group-text"><i class="far fa-eye-slash" id="togglePasswordConfirm"></i></span>
-        </div>
-
-        <div class="col-12 mt-4">
-            <button class="btn btn-primary" name="submit">Cập nhật mật khẩu</button>
-            <a href="user-list.php" class="btn btn-warning">Thoát</a>
-        </div>
+    <label for="validationCustom02" class="form-label">Nhập mật khẩu mới</label>
+    <div style="margin-top: 0px;" class="input-group ">
+        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+        <input class="form-control" type="password" id="password" name="password" placeholder="Password" value="">
+        <span class="input-group-text"><i class="far fa-eye-slash" id="togglePassword"></i></span>
     </div>
 
-    <script>
-        document.querySelector('button[name="submit"]').addEventListener('click', async function(event) {
-            event.preventDefault();
-            const urlParams = new URLSearchParams(window.location.search);
-            const url = urlParams.get('edit');
-            let form = document.getElementById('form-create-user');
-            let inputs = form.getElementsByTagName('input');
-            let formData = {};
+    <label for="validationCustom02" class="form-label">Nhập lại mật khẩu mới</label>
+    <div style="margin-top: 0px;" class="input-group ">
+        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+        <input class="form-control" type="password" id="confirm_password" name="confirm_password"
+            placeholder="Confirm Password" value="">
+        <span class="input-group-text"><i class="far fa-eye-slash" id="togglePasswordConfirm"></i></span>
+    </div>
 
-            for (let i = 0; i < inputs.length; i++) {
-                let input = inputs[i];
-                formData[input.name] = input.value;
-            }
-            formData['ma_user'] = url;
-            if (formData.password !== '' && formData.confirm_password !== '') {
-                if (formData.password === formData.confirm_password) {
-                    
-                    try {
-                        let response1 = await postData("https://phongkhamdakhoanhatviet.vn/api/user/update-password.php", formData);
-                        if (response1.status === 'success') {
-                            toastr.success(response1.message);
-                            clearInputs(inputs);
+    <div class="col-12 mt-4">
+        <button class="btn btn-primary" name="submit">Cập nhật mật khẩu</button>
+        <a href="user-list.php" class="btn btn-warning">Thoát</a>
+    </div>
+</div>
 
-                            let response2 = await postData("https://namkhoa.phongkhamdakhoanhatviet.vn/api/user/update-password.php", formData);
-                            if (response2.status === 'success') {
-                                // toastr.success(response2.message);
+<script>
+document.querySelector('button[name="submit"]').addEventListener('click', async function(event) {
+    event.preventDefault();
+    const urlParams = new URLSearchParams(window.location.search);
+    const url = urlParams.get('edit');
+    let form = document.getElementById('form-create-user');
+    let inputs = form.getElementsByTagName('input');
+    let formData = {};
 
-                                let response3 = await postData("https://haumontructrang.phongkhamdakhoanhatviet.vn/api/user/update-password.php", formData);
-                                if (response3.status === 'success') {
-                                    // toastr.success(response3.message);
+    for (let i = 0; i < inputs.length; i++) {
+        let input = inputs[i];
+        formData[input.name] = input.value;
+    }
+    formData['ma_user'] = url;
+    if (formData.password !== '' && formData.confirm_password !== '') {
+        if (formData.password === formData.confirm_password) {
 
-                                    let response4 = await postData("https://dalieu.phongkhamdakhoanhatviet.vn/api/user/update-password.php", formData);
-                                    if (response4.status === 'success') {
-                                        // toastr.success(response4.message);
+            try {
+                let response1 = await postData(
+                    "https://phukhoa.nhatvietclinic.vn/api/user/update-password.php", formData);
+                if (response1.status === 'success') {
+                    toastr.success(response1.message);
+                    clearInputs(inputs);
 
-                                        let response5 = await postData("https://benhxahoi.phongkhamdakhoanhatviet.vn/api/user/update-password.php", formData);
-                                        if (response5.status === 'success') {
-                                            // toastr.success(response5.message);
-                                            let response6 = await postData("https://dakhoa.phongkhamdakhoanhatviet.vn/api/user/update-password.php", formData);
-                                        } else {
-                                            // toastr.error(response5.message);
-                                        }
-                                    } else {
-                                        // toastr.error(response4.message);
-                                    }
-                                } else {
-                                    // toastr.error(response3.message);
-                                }
-                            } else {
-                                // toastr.error(response2.message);
-                            }
-                        } else {
-                            toastr.error(response1.message);
-                        }
-                    } catch (error) {
-                        toastr.error("Đã xảy ra lỗi khi gọi API: " + error.message);
-                    }
+
                 } else {
-                    toastr.error("Mật khẩu nhập lại không đúng!");
+                    toastr.error(response1.message);
                 }
-
-            } else {
-                toastr.error("Mật khẩu không khớp hoặc trống!");
+            } catch (error) {
+                toastr.error("Đã xảy ra lỗi khi gọi API: " + error.message);
             }
-        });
-
-        function postData(url, data) {
-            return new Promise((resolve, reject) => {
-                var xhr = new XMLHttpRequest();
-                xhr.open("POST", url, true);
-                xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-                xhr.onreadystatechange = function() {
-                    if (xhr.readyState === 4) {
-                        if (xhr.status === 200) {
-                            resolve(JSON.parse(xhr.responseText));
-                        } else {
-                            reject(new Error("Request failed with status: " + xhr.status));
-                        }
-                    }
-                };
-                xhr.send(JSON.stringify(data));
-            });
+        } else {
+            toastr.error("Mật khẩu nhập lại không đúng!");
         }
 
-        function clearInputs(inputs) {
-            for (let i = 0; i < inputs.length; i++) {
-                let input = inputs[i];
-                input.value = '';
+    } else {
+        toastr.error("Mật khẩu không khớp hoặc trống!");
+    }
+});
+
+function postData(url, data) {
+    return new Promise((resolve, reject) => {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    resolve(JSON.parse(xhr.responseText));
+                } else {
+                    reject(new Error("Request failed with status: " + xhr.status));
+                }
             }
-        }
+        };
+        xhr.send(JSON.stringify(data));
+    });
+}
 
-        const togglePassword = document.querySelector("#togglePassword");
-        const password = document.querySelector("#password");
+function clearInputs(inputs) {
+    for (let i = 0; i < inputs.length; i++) {
+        let input = inputs[i];
+        input.value = '';
+    }
+}
 
-        togglePassword.addEventListener("click", function() {
-            const type = password.getAttribute("type") === "password" ? "text" : "password";
-            password.setAttribute("type", type);
-            this.classList.toggle('fa-eye');
-        });
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector("#password");
 
-        const togglePasswordConfirm = document.querySelector("#togglePasswordConfirm");
-        const confirmPassword = document.querySelector("#confirm_password");
+togglePassword.addEventListener("click", function() {
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    this.classList.toggle('fa-eye');
+});
 
-        togglePasswordConfirm.addEventListener("click", function() {
-            const type = confirmPassword.getAttribute("type") === "password" ? "text" : "password";
-            confirmPassword.setAttribute("type", type);
-            this.classList.toggle('fa-eye');
-        });
-    </script>
+const togglePasswordConfirm = document.querySelector("#togglePasswordConfirm");
+const confirmPassword = document.querySelector("#confirm_password");
 
-    <?php include 'inc/footer.php'; ?>
+togglePasswordConfirm.addEventListener("click", function() {
+    const type = confirmPassword.getAttribute("type") === "password" ? "text" : "password";
+    confirmPassword.setAttribute("type", type);
+    this.classList.toggle('fa-eye');
+});
+</script>
+
+<?php include 'inc/footer.php'; ?>
 
 <?php } else { ?>
-    <div style="display: flex; align-items: center; justify-content: center; font-size: 30px; text-transform: uppercase; font-weight: 600; height: 90vh; color: red;">Trang này không tồn tại</div>
+<div
+    style="display: flex; align-items: center; justify-content: center; font-size: 30px; text-transform: uppercase; font-weight: 600; height: 90vh; color: red;">
+    Trang này không tồn tại</div>
 <?php } ?>
