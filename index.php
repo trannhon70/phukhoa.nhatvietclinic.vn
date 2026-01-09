@@ -3,7 +3,7 @@
 </head>
 
 <body>
-
+    <?php include "layout/header_layout.php" ?>
     <main>
 
         dsadsa

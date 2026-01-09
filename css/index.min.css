@@ -3,63 +3,15 @@
     margin: 0;
     padding: 0;
 }
-:root {
-    --max-width: 1920px;
-    --container: 1000px;
-    --width-100: 100%;
-    /* color */
-    --color-white: white;
-    --color-black: black;
 
-    /* background */
-    --background-color-white: white;
-
-    /* font size */
-    --font-size-10: 10px;
-    --font-size-12: 12px;
-    --font-size-14: 14px;
-    --font-size-16: 16px;
-    --font-size-18: 18px;
-    --font-size-20: 20px;
-    --font-size-22: 22px;
-    --font-size-24: 24px;
-    --font-size-26: 26px;
-    --font-size-28: 28px;
-
-    /* font weight */
-    --font-weight-400: 400;
-    --font-weight-500: 500;
-    --font-weight-600: 600;
-    --font-weight-700: 700;
-    --font-weight-900: 900;
-    --margin-auto: 0 auto;
-
-    /* position */
-    --position-relative: relative;
-    --position-absolute: absolute;
-
-    /* flex */
-    --display-flex: flex;
-    --display-block: block;
-    --align-item-center: center;
-    --justify-content-center: center;
-
-    /* text */
-    --text-decoration-none: none;
-    --text-tranform-uppercase: uppercase;
-    --text-tranform-capitalize: capitalize;
-    --text-center: center;
-    --text-justify: justify;
-
-    /* cursor: pointer; */
-    --cursor-pointer: pointer;
-
-    --font-style-italic: italic;
-
-    --box-sizing-border-box: border-box;
-}
 body {
-    width: var(--width-100);
     font-size: 1rem;
-    max-width: var(--max-width);
+    width: 600px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 599px) {
+    .header_mobile_container-body {
+        width: 100% !important;
+    }
 }
