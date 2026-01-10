@@ -36,8 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($data)) {
             echo json_encode(['status' => 'error', 'message' => 'Hiện tại bệnh này đã tồn tại!']);
             exit();
         } else {
-            $sql = "INSERT INTO admin_benh (name, id_khoa, created_at, slug, link, session, ma_benh, ma_user) 
-            VALUES ('$name','$id_khoa','$created_at','$slug','$link','$session','$ma_benh','$ma_user')";
+            $sql = "INSERT INTO admin_benh (name, id_khoa, created_at, slug, link, session, ma_benh, ma_user, hidden) 
+            VALUES ('$name','$id_khoa','$created_at','$slug','$link','$session','$ma_benh','$ma_user', 0)";
             $result = $db->insert($sql);
             if ($result) {
                 echo json_encode(['status' => 'success', 'message' => 'Tạo bệnh lý thành công!']);
