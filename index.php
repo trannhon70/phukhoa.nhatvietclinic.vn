@@ -58,9 +58,53 @@
         <section class="section_4">
             <div class="section_4_list">
                 <div class="section_4_list_item">
-                    dsadsa
+                    Y khoa tiến tiến, dịch vụ tận tâm
+                    <div class="section_4_list_item_icon">
+                        <div style="background-color: #e8829a;">
+                            <img loading="lazy" style="width: 35px; height: 35px;"
+                                src="<?php echo $local ?>/images/icons/icon-5.webp" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section_4_list_item">
+                    Chuyên môn cao, tâm huyết lớn
+                    <div class="section_4_list_item_icon">
+                        <div style="background-color: #f6c7d9;">
+                            <img loading="lazy" style="width: 35px; height: 35px;"
+                                src="<?php echo $local ?>/images/icons/icon-6.webp" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section_4_list_item">
+                    Nơi sức khỏe được ưu tiên hàng đầu
+                    <div class="section_4_list_item_icon">
+                        <div style="background-color: #f6c7d9;">
+                            <img loading="lazy" style="width: 35px; height: 35px;"
+                                src="<?php echo $local ?>/images/icons/icon-7.webp" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section_4_list_item">
+                    Sức khỏe là hạnh phúc, chúng tôi là người bảo vệ
+                    <div class="section_4_list_item_icon">
+                        <div style="background-color: #e8829a;">
+                            <img loading="lazy" style="width: 35px; height: 35px;"
+                                src="<?php echo $local ?>/images/icons/icon-8.webp" alt="...">
+                        </div>
+                    </div>
                 </div>
             </div>
+            <img loading="lazy" style="width: 100%; height: auto; margin-top: 20px;"
+                src="<?php echo $local ?>/images/banner/banner-7.webp" alt="...">
+        </section>
+        <section class="title_h2">
+            <h2>phòng khám vượt trội với <span></span></h2>
+        </section>
+        <section class="section_5">
+            ádasd
         </section>
     </main>
 
