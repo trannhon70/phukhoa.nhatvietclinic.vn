@@ -11,6 +11,7 @@ body {
 }
 
 @media only screen and (max-width: 599px) {
+    body,
     .header_mobile_container-body {
         width: 100% !important;
     }

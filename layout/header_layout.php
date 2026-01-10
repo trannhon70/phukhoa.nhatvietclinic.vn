@@ -5,15 +5,15 @@
                 <img loading="lazy" width="40px" height="auto" src="<?php echo $local ?>/images/icons/icon_dot.webp"
                     alt="...">
             </a>
-            <div style="color: white; text-align: center; font-size: 14px; "><span
-                    style="font-size: 18px; font-weight: 700;">Phòng
-                    Khám Chuyên khoa</span> <br> Địa chỉ uy tín, bảo mật thông tin </div>
+            <div style="color: white; text-align: center; font-size: 18px; ">
+                <div style="">PHÒNG KHÁM</div>
+                <span style="font-weight: 700;">Chuyên Khoa Nhật Việt</span>
+            </div>
 
             <?php include "layout/sider_bar.php" ?>
         </div>
     </div>
     <div class="header__mobile-baner">
-
-
+        <img loading="lazy" src="<?php echo $local ?>/images/banner/banner_mobile.webp" alt="..." srcset="">
     </div>
 </header>
