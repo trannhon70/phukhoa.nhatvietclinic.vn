@@ -25,7 +25,7 @@
          </div> -->
      </div>
      <img loading="lazy" style="width: 100%; height: auto; margin-top: 10px;"
-         src="<?php echo $local ?>/images/banner/map.webp" />
+         src="<?php echo $local ?>/images/banner/map.webp" alt="..." />
  </footer>
  <div class="footer_fixed">
      <div class="footer__mobile-body">
