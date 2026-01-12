@@ -14,6 +14,6 @@
         </div>
     </div>
     <div class="header__mobile-baner">
-        <img loading="lazy" src="<?php echo $local ?>/images/banner/banner_mobile.webp" alt="..." srcset="">
+        <img fetchpriority=high src="<?php echo $local ?>/images/banner/banner_mobile.webp" alt="..." srcset="">
     </div>
 </header>

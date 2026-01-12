@@ -34,8 +34,8 @@ $local = 'http://localhost/_nhatvietnew/phukhoa.nhatvietclinic.vn';
         content="Phòng khám Nhật Việt chuyên điều trị bệnh nam khoa, bệnh xã hội, da liễu, hậu môn - trực tràng uy tính tại thành phố Hồ Chí Minh">
     <title>Phòng khám Nhật Việt</title>
     <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.png" type="image/x-icon">
-    <!-- <link rel="preload" as="image" href="<?php echo $local ?>/images/banner/mobile_banner.webp" fetchpriority="high"
-        media="(max-width: 768px)"> -->
+    <link rel="preload" as="image" href="<?php echo $local ?>/images/banner/mobile_banner.webp" fetchpriority="high"
+        media="(max-width: 768px)">
     <link rel="preload" href="<?php echo $local ?>/css/index.min.css" as="style"
         onload='this.onload=null,this.rel="stylesheet"'>
 

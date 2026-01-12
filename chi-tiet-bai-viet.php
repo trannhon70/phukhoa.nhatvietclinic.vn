@@ -36,11 +36,11 @@ function setTitleAndScroll()
         echo "<meta name='keywords' content='$safeKeywords'>\n";
         echo "<meta property='og:title' content='$safeTitle'>\n";
         echo "<meta property='og:description' content='$safeDescription'>\n";
-        echo "<meta property='og:image' content='https://andongclinic.vn/admin/uploads/$safeImage'>\n";
+        echo "<meta property='og:image' content='https://phukhoa.nhatvietclinic.vn/admin/uploads/$safeImage'>\n";
         echo "<meta property='og:image:width' content='1200'>\n";
         echo "<meta property='og:image:height' content='630'>\n";
         echo "<meta property='og:type' content='article'>\n";
-        echo "<meta property='og:url' content='https://andongclinic.vn/{$getPostDetail['slug']}.html'>\n";
+        echo "<meta property='og:url' content='https://phukhoa.nhatvietclinic.vn/{$getPostDetail['slug']}.html'>\n";
     }
 }
 setTitleAndScroll();
@@ -148,9 +148,9 @@ setTitleAndScroll();
                         }
 
                         //hiển thị css img chatbox
-                        // if (imgElements[i].src.startsWith(
-                        //         '<?php echo $local ?>/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif') ==
-                        if (imgElements[i].src.startsWith('http://localhost/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif') ==
+                        if (imgElements[i].src.startsWith(
+                                '<?php echo $local ?>/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif') ==
+                            // if (imgElements[i].src.startsWith('http://localhost/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif') ==
                             true) {
                             imgElements[i].style.borderRadius = '8px';
                             imgElements[i].style.setProperty('display', 'block', 'important');
@@ -210,8 +210,9 @@ setTitleAndScroll();
                     if (src && !src.startsWith('/ckfinder/userfiles/images/Icon')) {
                         img.classList.add('img-responsive')
                     }
-                    // if (img.src.startsWith('https://andongclinic.vn/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif')) {
-                    if (img.src.startsWith('http://localhost/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif')) {
+                    if (img.src.startsWith(
+                            'https://phukhoa.nhatvietclinic.vn/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif')) {
+                        // if (img.src.startsWith('http://localhost/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif')) {
                         img.classList.add('img-gif');
 
                     }
