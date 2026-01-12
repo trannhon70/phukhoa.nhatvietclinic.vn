@@ -11,18 +11,18 @@
          <div class="footer_list_item">
              <img loading="lazy" style="width: 20px; height: auto;" src="<?php echo $local ?>/images/icons/icon-9.webp"
                  alt="...">
-             <span>73 Kinh Dương Vương, P.12, Q.6, TP.HCM </span>
+             <span>73 Kinh Dương Vương, P. Phú Lâm, TP.HCM </span>
          </div>
          <div class="footer_list_item">
              <img loading="lazy" style="width: 20px; height: auto;" src="<?php echo $local ?>/images/icons/icon-10.webp"
                  alt="...">
              <span>Hotline: <strong>0968 063 109</strong> </span>
          </div>
-         <div class="footer_list_item">
+         <!-- <div class="footer_list_item">
              <img loading="lazy" style="width: 20px; height: auto;" src="<?php echo $local ?>/images/icons/icon-11.webp"
                  alt="...">
              <span>pknhatviet@gmail.com </span>
-         </div>
+         </div> -->
      </div>
      <img loading="lazy" style="width: 100%; height: auto; margin-top: 10px;"
          src="<?php echo $local ?>/images/banner/map.webp" />
