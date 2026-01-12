@@ -28,11 +28,49 @@
          src="<?php echo $local ?>/images/banner/map.webp" />
  </footer>
  <div class="footer_fixed">
-
+     <div class="footer__mobile-body">
+         <div class="footer__mobile-container">
+             <a href="tel:+02877767777" class="footer__mobile-container-left">
+                 <div class="footer__mobile-container-left-top">TƯ VẤN TRỰC TUYẾN 24/7</div>
+                 <span class="footer__mobile-container-left-bottom">028-7776-7777</span>
+                 <div class="footer__mobile-container-left-icon">
+                     <img loading="lazy" width="65px" height="auto"
+                         src="<?php echo $local ?>/images/icons/icon_phone_red.png" alt="...">
+                 </div>
+                 <div class="footer__mobile-container-left-icon-top">
+                     <span>GỌI NGAY</span>
+                 </div>
+             </a>
+             <a href="<?php echo $local ?>" class="footer__mobile-container-right">
+                 <div>ĐẶT LỊCH</div>
+                 <img loading="lazy" width="70px" height="auto" src="<?php echo $local ?>/images/icons/icon_lich.png"
+                     alt="...">
+             </a>
+         </div>
+     </div>
  </div>
 
 
+ <script defer>
+     let element = document.querySelector('.footer__mobile-container-left-icon-top');
 
+     function hidenIconFooterCall() {
+         if (element) {
+             element.style.display = 'none'
+         }
+     }
+
+     function showIconFooterCall() {
+         if (element) {
+             element.style.display = 'block'
+         }
+     }
+
+     setInterval(() => {
+         hidenIconFooterCall();
+         setTimeout(showIconFooterCall, 1000);
+     }, 3000);
+ </script>
  <script>
      document.addEventListener('DOMContentLoaded', () => {
          function updateHeaderScripts() {
@@ -45,9 +83,9 @@
              if (window.innerWidth < 1000) {
                  const mobileScripts = [
                      // {
-                     //     src: '<?php echo $local ?>/js/mobile.min.js',
-                     //     id: 'mobile-0'
-                     // },
+                     //      src: '<?php echo $local ?>/js/mobile.min.js',
+                     //      id: 'mobile-0'
+                     //  },
                      // {
                      //     src: 'js/siderbar_mobile.min.js',
                      //     id: 'mobile-1'
