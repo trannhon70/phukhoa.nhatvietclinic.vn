@@ -104,8 +104,102 @@
             <h2>phòng khám vượt trội với <span></span></h2>
         </section>
         <section class="section_5">
-            ádasd
+            <div class="section_5_item">
+                <div class="section_5_item_text">Đội ngũ bác sĩ chuyên môn cao, kinh nghiệm</div>
+                <img loading="lazy" style="width: 78px; height: auto;" src="<?php echo $local ?>/images/icons/1.webp"
+                    alt="...">
+            </div>
+            <div class="section_5_item">
+                <div class="section_5_item_text">Hệ thống máy móc tiên tiến, hiện đại</div>
+                <img loading="lazy" style="width: 78px; height: auto;" src="<?php echo $local ?>/images/icons/2.webp"
+                    alt="...">
+            </div>
+            <div class="section_5_item">
+                <div class="section_5_item_text">Thủ tục nhanh gọn, được hỗ trợ tận tình</div>
+                <img loading="lazy" style="width: 78px; height: auto;" src="<?php echo $local ?>/images/icons/3.webp"
+                    alt="...">
+            </div>
+            <div class="section_5_item">
+                <div class="section_5_item_text">Môi trường thân thiện, dịch vụ tận tâm</div>
+                <img loading="lazy" style="width: 78px; height: auto;" src="<?php echo $local ?>/images/icons/4.webp"
+                    alt="...">
+            </div>
+            <div class="section_5_item">
+                <div class="section_5_item_text">Chi phí khám hỗ trợ điều trị bệnh hợp lý</div>
+                <img loading="lazy" style="width: 78px; height: auto;" src="<?php echo $local ?>/images/icons/5.webp"
+                    alt="...">
+            </div>
         </section>
+
+        <section class="title_h2">
+            <h2>không gian phòng khám <span></span></h2>
+        </section>
+        <section class="section_6">
+            <div class="section_6_list">
+                <div class="section_6_list_item">
+                    <img loading="lazy" style="width: 100%; height: auto;"
+                        src="<?php echo $local ?>/images/banner/h1.webp" alt="...">
+                </div>
+                <div class="section_6_list_item">
+                    <img loading="lazy" style="width: 100%; height: auto;"
+                        src="<?php echo $local ?>/images/banner/h2.webp" alt="...">
+                </div>
+                <div class="section_6_list_item">
+                    <img loading="lazy" style="width: 100%; height: auto;"
+                        src="<?php echo $local ?>/images/banner/h3.webp" alt="...">
+                </div>
+                <div class="section_6_list_item">
+                    <img loading="lazy" style="width: 100%; height: auto;"
+                        src="<?php echo $local ?>/images/banner/h4.webp" alt="...">
+                </div>
+            </div>
+            <div class="section_6_bottom">
+                <img loading="lazy" style="width: 100%; height: auto;"
+                    src="<?php echo $local ?>/images/banner/banner-8.webp" alt="...">
+                <img class="section_6_bottom_absolute" loading="lazy" style="width: 60%; height: auto;"
+                    src="<?php echo $local ?>/images/banner/thoi-gian-lam-viec.webp" alt="...">
+            </div>
+        </section>
+        <section class="title_h2">
+            <h2>phản hồi từ khách hàng<span></span></h2>
+        </section>
+        <section class="section_7">
+            <div class="section_7_list">
+                <div class="section_7_list_item">
+                    <div class="section_7_list_item_absolute">
+                        <img loading="lazy" style="width: 70px; height: auto;"
+                            src="<?php echo $local ?>/images/icons/icon-13.webp" alt="...">
+                    </div>
+                    <div class="section_7_list_item_title">
+                        kim oanh
+                    </div>
+                    <div class="section_7_list_item_office">
+                        Nhân viên văn phòng - Tân Phú
+                    </div>
+                    <div class="section_7_list_item_star">
+                        <img loading="lazy" style="width: 25px; height: auto;"
+                            src="<?php echo $local ?>/images/icons/icon-15.webp" alt="...">
+                        <img loading="lazy" style="width: 25px; height: auto;"
+                            src="<?php echo $local ?>/images/icons/icon-15.webp" alt="...">
+                        <img loading="lazy" style="width: 25px; height: auto;"
+                            src="<?php echo $local ?>/images/icons/icon-15.webp" alt="...">
+                        <img loading="lazy" style="width: 25px; height: auto;"
+                            src="<?php echo $local ?>/images/icons/icon-15.webp" alt="...">
+                        <img loading="lazy" style="width: 25px; height: auto;"
+                            src="<?php echo $local ?>/images/icons/icon-15.webp" alt="...">
+                    </div>
+                    <div class="section_7_list_item_time">
+                        (2 ngày trước)
+                    </div>
+                    <div class="section_7_list_item_note">
+                        Mình bị viêm da cũng khá nặng, đã chữa trị nhiều nơi nhưng không khỏi. Mình biết đến Phòng khám
+                        Nhật Việt qua một người bạn. Khi mình đến khám, bác sĩ và nhân viên phòng khám hướng dẫn mình
+                        rất chi tiết trong từng hạng mục
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 
