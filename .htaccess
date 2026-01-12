@@ -3,6 +3,6 @@ RewriteEngine On
 # Rewrite for index.html
 RewriteRule ^trang-chu\.html$ index.php [L]
 
-RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)\.html$ chi-tiet-bai-viet.php?khoa=$1&baiviet=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)\.html$ chi-tiet-bai-viet.php?tintuc=$1 [L]
 
 

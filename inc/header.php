@@ -10,7 +10,7 @@ spl_autoload_register(function ($className) {
     include_once "classes/" . $className . ".php";
 });
 
-$khoas = new Khoa();
+$bai_viet = new post();
 
 ?>
 

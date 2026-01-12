@@ -9,10 +9,10 @@
      </li>
 
      <li>
-         <a href="<?php echo $local ?>/gioi-thieu-bac-si.php">Đội ngũ bác sĩ</a>
+         <a href="<?php echo $local ?>">Đội ngũ bác sĩ</a>
      </li>
      <li>
-         <a href="<?php echo $local ?>/lich-kham.php">lịch khám bệnh viện</a>
+         <a href="<?php echo $local ?>">lịch khám bệnh viện</a>
      </li>
      <li>
          <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">tư vấn trực tuyến</a>
@@ -169,7 +169,7 @@
      }
  </style>
 
- <script>
+ <script defer nonce="abc123">
      function showSidebar() {
          const sidebar = document.querySelector('.sidebar_mobile');
          const icons_menu = document.querySelector('.header__mobile-top-left-icon');
