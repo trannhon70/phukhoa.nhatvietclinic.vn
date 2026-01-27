@@ -177,7 +177,7 @@ setTitleAndScroll();
                     let h3Element = baiVietElement.getElementsByTagName('h3');
 
                     for (let i = 0; i < h3Element.length; i++) {
-                        h3Element[i].style.color = '#00D8D8';
+                        h3Element[i].style.color = 'rgb(255 0 80)';
                         h3Element[i].style.fontWeight = '700';
                         h3Element[i].style.fontSize = '18px';
                         h3Element[i].style.textTransform = 'capitalize';
