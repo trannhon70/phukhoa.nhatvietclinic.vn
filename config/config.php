@@ -6,6 +6,6 @@ define("DB_NAME", "phongkhamdakhoanhatviet.vn");
 
 
 // define("DB_HOST", "localhost");
-// define("DB_USER", "phukhoa_nhatvietclinic_vn");
-// define("DB_PASS", "c54c4c884ae478");
-// define("DB_NAME", "phukhoa_nhatvietclinic_vn");   
+// define("DB_USER", "sql_phukhoa_nhatvietclinic_vn");
+// define("DB_PASS", "d871d5d73201b8");
+// define("DB_NAME", "sql_phukhoa_nhatvietclinic_vn");

@@ -50,7 +50,7 @@
      </div>
  </div>
 
-
+ <script defer src="https://livechat.phongkhamnhatviet.vn/chat-box-ai.js"></script>
  <script defer>
      let element = document.querySelector('.footer__mobile-container-left-icon-top');
 

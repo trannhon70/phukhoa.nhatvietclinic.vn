@@ -35,7 +35,7 @@
                 </div>
             </div>
         </section>
-        <section class="title_h2">
+        <!-- <section class="title_h2">
             <h2>đội ngũ bác sĩ giỏi - kinh nghiệm <span></span></h2>
         </section>
         <section class="section_3">
@@ -51,7 +51,7 @@
                 <img loading="lazy" style="width: 100%; height: auto;"
                     src="<?php echo $local ?>/images/banner/banner-5.webp" alt="...">
             </div>
-        </section>
+        </section> -->
         <section class="title_h2">
             <h2>phòng khám chuyên khoa uy tín <span></span></h2>
         </section>
