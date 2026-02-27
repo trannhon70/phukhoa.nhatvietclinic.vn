@@ -53,3 +53,31 @@ $local = 'https://phukhoa.nhatvietclinic.vn'
         <link rel="stylesheet" href="<?php echo $local ?>/css/header.min.css">
         <link rel="stylesheet" href="<?php echo $local ?>/css/footer.min.css">
     </noscript>
+
+    <script>
+        // Chỉ tải Google Analytics khi người dùng cuộn xuống
+        document.addEventListener('scroll', function loadGA() {
+            console.log('Người dùng cuộn xuống - Tải Google Analytics');
+
+            // Tạo thẻ script
+            var g = document.createElement('script'),
+                s = document.scripts[0];
+            g.src = 'https://www.googletagmanager.com/gtag/js?id=G-3424R2LJB5';
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
+
+            // Cấu hình gtag
+            g.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'G-3424R2LJB5');
+            };
+
+            // Xóa sự kiện lắng nghe để không tải lại
+            document.removeEventListener('scroll', loadGA);
+        });
+    </script>
